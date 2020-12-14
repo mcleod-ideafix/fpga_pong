@@ -1,12 +1,13 @@
 # FPGA Pong core
 A simple Pong core for FPGA, featuring:
 - Single 25 MHz clock.
-- Digital (not analog) input for each player
-- VGA output
+- Digital (not analog) input for each player.
+- VGA output.
 - No sound :(
-- Allows human vs human, human vs machine and machine vs machine
-- Small in resources. Fits in a Basys FPGA trainer (683 LUTs, about 35% of available LUTs in a Spartan 3E-100 device)
-- 100% Verilog
+- Allows human vs human, human vs machine and machine vs machine.
+- Increasing speed as game progresses.
+- Small in resources. Fits in a Basys FPGA trainer (683 LUTs, about 35% of available LUTs in a Spartan 3E-100 device).
+- 100% Verilog.
 
 ## How to build
 A FPGA board with at least a VGA output is needed. The core outputs 8 bits per primary colour, so if your board uses less than 8 bits, just use the most significant bits of each colour, according to your VGA interface capabilities (for example, Basys uses a RGB bit scheme of 3:3:2). Output timing is industry standard 640x480@60 Hz.
